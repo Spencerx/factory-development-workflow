@@ -25,10 +25,10 @@
 
     <div id="instructions">
       <div>
-        <p>Click and drag to pan. Use the scroll wheel to zoom.</p>
-	<p>This workflow provides two entry points (blue boxes) and two valid exit points or final products (red boxes).</p>
-	<p>The actual workflow is included in this proposal, and is marked using thicker lines.</p>
-	<p>You can click in the Roles and in the Boxes to get more information.</p>
+        <p>Use the scroll wheel to zoom. When zoomed, click and drag to pan. </p>
+	      <p>Double click in the Roles and in the Boxes to get more information.</p>
+        <p>This workflow provides two entry points (blue boxes) and two valid exit points or final products (red boxes).</p>
+        <p>The current workflow is included in this proposal, and is marked using thicker lines.</p>
       </div>
     </div>
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
     svg = document.getElementById("flowchart").appendChild(xml.documentElement);
     $('svg').svgPan('viewport', true, true, false, 1.5 );
 
-    $("#viewport g").click(function() {
+    $("#viewport g").dblclick(function() {
       explain($(this).attr("id"));
     });
   });
