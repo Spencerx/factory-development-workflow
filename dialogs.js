@@ -10,6 +10,7 @@ window.dialog = function(title, content) {
 }
 
 window.titles = {
+  // Actions and conditions
   packagedevel: "Package development",
   createsr: "Create SR",
   acceptsr: "Accept Submit Request",
@@ -34,6 +35,7 @@ window.titles = {
   factorytested: "Factory Tested",
   createiso: "Create ISO",
   factoryiso: "Factory ISO",
+  // Roles
   coordinator: "Coordinator",
   factorymaintainer: "Factory Maintainer",
   legalreviewer: "Legal Reviewer",
@@ -41,8 +43,7 @@ window.titles = {
   technicalreviewer: "Technical Reviewer",
   qateam: "QA Team",
   projectmaintainer: "Project Maintainer",
-  packagemaintainer: "Package Maintainer",
-
+  packagemaintainer: "Package Maintainer"
 }
 
 window.descriptions = {
@@ -69,7 +70,16 @@ window.descriptions = {
   bugreport: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> QA Team</li></ul><p>The Integration Test task can detect errors in the distribution, and as a result of that QA Team needs to fill a bug report. This bug report needs to be precise and detailed to make easy the work for the developer.</p><p>Sometimes the bug reported needs to be tracked to avoid regressions. In this case the QA Teams needs also incorporate a new test case in the tool to detect them.</p>",
   factorytested: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul>",
   createiso: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Coordinator</li></ul>",
-  factoryiso: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul>"
+  factoryiso: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul>",
+
+  coordinator: "<ul><li><strong>Type:</strong> Role</li></ul>",
+  factorymaintainer: "<ul><li><strong>Type:</strong> Role</li></ul>",
+  legalreviewer: "<ul><li><strong>Type:</strong> Role</li></ul>",
+  securityreviewer: "<ul><li><strong>Type:</strong> Role</li></ul>",
+  technicalreviewer: "<ul><li><strong>Type:</strong> Role</li></ul>",
+  qateam: "<ul><li><strong>Type:</strong> Role</li></ul>",
+  projectmaintainer: "<ul><li><strong>Type:</strong> Role</li></ul>",
+  packagemaintainer: "<ul><li><strong>Type:</strong> Role</li></ul>"
 }
 
 window.explain = function(id) {
