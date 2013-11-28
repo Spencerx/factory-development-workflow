@@ -94,7 +94,7 @@
     <tspan x="500" y="1975.93">Package</tspan>
     <tspan x="500" y="1994.27">Development</tspan>
   </text>
-  <g>
+  <g class="action" id="develprojectint">
     <rect style="fill: #d8e6f9" x="620" y="1660" width="160" height="80"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="620" y="1660" width="160" height="80"/>
   </g>
@@ -102,7 +102,7 @@
     <tspan x="700" y="1695.93">Devel Project</tspan>
     <tspan x="700" y="1714.27">Integration</tspan>
   </text>
-  <g>
+  <g class="condition" id="needsstaging">
     <polygon style="fill: #ffffff" points="1190,994 1280,1044 1190,1094 1100,1044 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1190,994 1280,1044 1190,1094 1100,1044 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1190" y="1039.31">
@@ -110,7 +110,7 @@
       <tspan x="1190" y="1057.65">Staging</tspan>
     </text>
   </g>
-  <g>
+  <g class="action" id="factoryint">
     <rect style="fill: #ffffff" x="2020" y="514" width="160" height="80"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="2020" y="514" width="160" height="80"/>
   </g>
@@ -118,7 +118,7 @@
     <tspan x="2100" y="549.928">Factory</tspan>
     <tspan x="2100" y="568.272">Integration</tspan>
   </text>
-  <g>
+  <g class="condition" id="integrationtest">
     <polygon style="fill: #ffffff" points="2366,1232 2486,1292 2366,1352 2246,1292 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2366,1232 2486,1292 2366,1352 2246,1292 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="2366" y="1287.31">
@@ -136,7 +136,7 @@
     <polygon style="fill: #000000" points="2366,1387.02 2361,1377.02 2366,1379.52 2371,1377.02 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2366,1387.02 2361,1377.02 2366,1379.52 2371,1377.02 "/>
   </g>
-  <g>
+  <g class="condition" id="needsqa">
     <polygon style="fill: #ffffff" points="1500,994 1580,1044 1500,1094 1420,1044 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1500,994 1580,1044 1500,1094 1420,1044 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1500" y="1048.48">
@@ -148,7 +148,7 @@
     <polygon style="fill: #000000" points="1500,1257.76 1495,1247.76 1500,1250.26 1505,1247.76 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1500,1257.76 1495,1247.76 1500,1250.26 1505,1247.76 "/>
   </g>
-  <g>
+  <g class="action" id="factorytested">
     <rect style="fill: #ffdee1" x="2547" y="518" width="160" height="80"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="2547" y="518" width="160" height="80"/>
   </g>
@@ -163,7 +163,7 @@
     <polygon style="fill: #000000" points="2627.01,445.236 2632.01,455.237 2627.01,452.736 2622.01,455.235 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2627.01,445.236 2632.01,455.237 2627.01,452.736 2622.01,455.235 "/>
   </g>
-  <g>
+  <g class="action" id="stagingprojectint">
     <rect style="fill: #ffffff" x="1020" y="1540" width="160" height="480"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1020" y="1540" width="160" height="480"/>
   </g>
@@ -181,7 +181,7 @@
     <polygon style="fill: #000000" points="900,1112.47 905,1122.47 900,1119.97 895,1122.47 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" points="900,1112.47 905,1122.47 900,1119.97 895,1122.47 "/>
   </g>
-  <g>
+  <g class="action" id="bugreport">
     <rect style="fill: #ffffff" x="2286" y="1390" width="160" height="80"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="2286" y="1390" width="160" height="80"/>
   </g>
@@ -193,19 +193,19 @@
     <polygon style="fill: #000000" points="2015.53,554 2005.53,559 2008.03,554 2005.53,549 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" points="2015.53,554 2005.53,559 2008.03,554 2005.53,549 "/>
   </g>
-  <g>
+  <g class="condition" id="acceptsr">
     <polygon style="fill: #ffffff" points="700.471,1780 780.942,1819.39 700.471,1858.78 620,1819.39 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="700.471,1780 780.942,1819.39 700.471,1858.78 620,1819.39 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="700.471" y="1823.87">
       <tspan x="700.471" y="1823.87">Accept SR</tspan>
     </text>
   </g>
-  <g>
+  <g class="action" id="createsr">
     <polyline style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" points="580,2100 580,2100 700.47,2100 700.47,1870.75 "/>
     <polygon style="fill: #000000" points="700.47,1863.25 705.47,1873.25 700.47,1870.75 695.47,1873.25 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" points="700.47,1863.25 705.47,1873.25 700.47,1870.75 695.47,1873.25 "/>
   </g>
-  <g>
+  <g class="action" id="createsr">
     <rect style="fill: #ffffff" x="420" y="2060" width="160" height="80"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="420" y="2060" width="160" height="80"/>
   </g>
@@ -217,7 +217,7 @@
     <polygon style="fill: #000000" points="500,2055.53 495,2045.53 500,2048.03 505,2045.53 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #000000" points="500,2055.53 495,2045.53 500,2048.03 505,2045.53 "/>
   </g>
-  <g>
+  <g class="action" id="createsrfactory">
     <rect style="fill: #ffffff" x="620.47" y="1540.24" width="160" height="80"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="620.47" y="1540.24" width="160" height="80"/>
   </g>
@@ -235,7 +235,7 @@
     <polygon style="fill: #000000" points="500,1937.76 495,1927.76 500,1930.26 505,1927.76 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="500,1937.76 495,1927.76 500,1930.26 505,1927.76 "/>
   </g>
-  <g>
+  <g class="action" id="createsrgroup">
     <rect style="fill: #ffffff" x="1220" y="1560" width="160" height="80"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1220" y="1560" width="160" height="80"/>
   </g>
@@ -253,7 +253,7 @@
     <polygon style="fill: #000000" points="582.236,1980 592.236,1975 589.736,1980 592.236,1985 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="582.236,1980 592.236,1975 589.736,1980 592.236,1985 "/>
   </g>
-  <g>
+  <g class="condition" id="acceptsr2">
     <polygon style="fill: #ffffff" points="1900,507.24 1980,554.001 1900,600.761 1820,554.001 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1900,507.24 1980,554.001 1900,600.761 1820,554.001 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1900" y="558.479">
@@ -337,21 +337,21 @@
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="500,1940.76 495,1930.76 500,1933.26 505,1930.76 "/>
   </g>
   <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20 4 4 4 4 4; stroke: #000000" x="780" y="636" width="240" height="472"/>
-  <g>
+  <g class="condition" id="autolegal">
     <polygon style="fill: #ffffff" points="899.999,673.174 981.653,714.001 899.999,754.827 818.346,714.001 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="899.999,673.174 981.653,714.001 899.999,754.827 818.346,714.001 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="899.999" y="718.479">
       <tspan x="899.999" y="718.479">Auto Legal</tspan>
     </text>
   </g>
-  <g>
+  <g class="condition" id="rpmlint">
     <polygon style="fill: #ffffff" points="901.653,834 983.307,874.827 901.653,915.653 820,874.827 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="901.653,834 983.307,874.827 901.653,915.653 820,874.827 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="901.653" y="879.305">
       <tspan x="901.653" y="879.305">rpmlint</tspan>
     </text>
   </g>
-  <g>
+  <g class="condition" id="checkrepo">
     <polygon style="fill: #ffffff" points="902.971,994 985.942,1035.49 902.971,1076.97 820,1035.49 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="902.971,994 985.942,1035.49 902.971,1076.97 820,1035.49 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="902.971" y="1039.96">
@@ -363,7 +363,7 @@
     <polygon style="fill: #000000" points="500,1937.76 495,1927.76 500,1930.26 505,1927.76 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="500,1937.76 495,1927.76 500,1930.26 505,1927.76 "/>
   </g>
-  <g>
+  <g class="condition" id="mergedevel">
     <polygon style="fill: #ffffff" points="1300.13,1699.73 1382.43,1759.87 1300.13,1820 1217.84,1759.87 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1300.13,1699.73 1382.43,1759.87 1300.13,1820 1217.84,1759.87 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1300.13" y="1755.17">
@@ -377,14 +377,14 @@
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="782.236,1700 792.236,1695 789.736,1700 792.236,1705 "/>
   </g>
   <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20 4 4 4 4 4; stroke: #000000" x="1590.76" y="637" width="229.235" height="472.326"/>
-  <g>
+  <g class="condition" id="legalreview">
     <polygon style="fill: #ffffff" points="1701.65,669.416 1792.48,714.828 1701.65,760.239 1610.83,714.828 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1701.65,669.416 1792.48,714.828 1701.65,760.239 1610.83,714.828 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1701.65" y="719.305">
       <tspan x="1701.65" y="719.305">Legal Review</tspan>
     </text>
   </g>
-  <g>
+  <g class="condition" id="technicalrev">
     <polygon style="fill: #ffffff" points="1702.97,988.456 1797.03,1035.48 1702.97,1082.51 1608.91,1035.48 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1702.97,988.456 1797.03,1035.48 1702.97,1082.51 1608.91,1035.48 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1702.97" y="1039.96">
@@ -399,7 +399,7 @@
   <text font-size="16.00" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="716.334" y="862.334">
     <tspan x="716.334" y="862.334">Not Ok</tspan>
   </text>
-  <g>
+  <g class="action" id="factoryiso">
     <rect style="fill: #ffdee1" x="2747" y="518" width="160" height="80"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="2747" y="518" width="160" height="80"/>
   </g>
@@ -407,7 +407,7 @@
     <tspan x="2827" y="553.928">Factory</tspan>
     <tspan x="2827" y="572.272">ISO</tspan>
   </text>
-  <g>
+  <g class="condition" id="createiso">
     <polygon style="fill: #ffffff" points="2627.02,362.973 2710.37,402.986 2627.02,443 2543.66,402.986 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2627.02,362.973 2710.37,402.986 2627.02,443 2543.66,402.986 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="2627.02" y="407.464">
@@ -439,7 +439,7 @@
     <polygon style="fill: #000000" points="1420,1046.24 1425,1056.24 1420,1053.74 1415,1056.24 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1420,1046.24 1425,1056.24 1420,1053.74 1415,1056.24 "/>
   </g>
-  <g>
+  <g class="condition" id="preinttest">
     <polygon style="fill: #ffffff" points="1500,1260 1600,1340 1500,1420 1400,1340 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1500,1260 1600,1340 1500,1420 1400,1340 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1500" y="1335.31">
@@ -471,7 +471,7 @@
   <text font-size="16.00" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1391.67" y="1750">
     <tspan x="1391.67" y="1750">No</tspan>
   </text>
-  <g>
+  <g class="condition" id="rpmlint2">
     <polygon style="fill: #ffffff" points="1701.65,834 1783.31,874.827 1701.65,915.653 1620,874.827 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1701.65,834 1783.31,874.827 1701.65,915.653 1620,874.827 "/>
     <text font-size="20.00" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1701.65" y="879.305">
