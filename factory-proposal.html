@@ -14,47 +14,23 @@
     <script type="text/javascript" src="jquery-svgpan.js"></script>
     <!-- Dialogs -->
     <script type="text/javascript" src="dialogs.js"></script>
+    <!-- A little bit of style -->
+    <link type="text/css" rel="stylesheet" media="all" href="style.css">
 
     <title>Factory proposal</title>
 
-    <style type="text/css">
-      #instructions {
-      border: 1px solid #aaa;
-      margin: .5em;
-      padding: .5em;
-      }
-
-      svg {
-      border: 1px solid #aaa;
-      overflow: hidden; /* Thanks IE9! */
-      }
-
-      svg .role:hover {
-        opacity: 0.5;
-      }
-
-      svg .action:hover {
-        opacity: 0.5;
-      }
-
-      svg .condition:hover {
-        opacity:
-        0.5;
-      }
-    </style>
   </head>
 
   <body>
 
-    <!--div id="instructions">
+    <div id="instructions">
       <div>
         Click and drag to pan.  Use the scroll wheel to zoom.
       </div>
-    </div-->
+    </div>
 
     <div id="flowchart"></div>
 
-    
     <script type="text/javascript">
 
 
@@ -63,7 +39,7 @@ $(document).ready(function() {
   d3.xml("factory-proposal.svg", "image/svg+xml", function(xml) {
     svg = document.getElementById("flowchart").appendChild(xml.documentElement);
     $('svg').svgPan('viewport', true, true, false, 1.5 );
-    
+
     $("#viewport g").click(function() {
       explain($(this).attr("id"));
     });

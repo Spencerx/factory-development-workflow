@@ -1,0 +1,42 @@
+/* Layout */
+body {
+  width: 1350px;
+}
+
+#diagram {
+  float: left;
+  width: 1120px; 
+}
+
+#instructions {
+  border: 1px solid #aaa;
+  margin: 0px;
+  float: right;
+  width: 220px; 
+  height: 770px;
+  padding: 5px;
+}
+
+/* Diagram */
+svg {
+  border: 1px solid #aaa;
+  overflow: hidden; /* Thanks IE9! */
+}
+
+svg .role:hover {
+  opacity: 0.5;
+}
+
+svg .action:hover {
+  opacity: 0.5;
+}
+
+svg .condition:hover {
+  opacity:
+  0.5;
+}
+
+/* jQuery UI */
+.ui-widget {
+  font-size: 10pt;
+}

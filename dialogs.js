@@ -5,7 +5,7 @@ window.dialog = function(title, content) {
   } else {
     $("#dialog").remove();
     $("body").append("<div id=\"dialog\" title=\"" + title + "\">\n" + content + "</div>");
-    $("#dialog").dialog();
+    $("#dialog").dialog({width: 500});
   }
 }
 
