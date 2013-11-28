@@ -36,6 +36,9 @@
 **/
 
 // SVGPan library 1.2.2 license and documentation:
+//
+// THIS VERSION CONTAINS SMALL AND DIRTY MODIFICATIONS FOR OUR VERY CONCRETE
+// CASE. IF YOU WANT TO USE jquery-SVGPan, PLEASE LOOK FOR THE ORIGINAL VERSION
 
 /** 
  *  SVGPan library 1.2.2
