@@ -101,7 +101,7 @@ window.descriptions = {
 
   factorytested: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul><p>This is the final product for the users. This is the expected distribution that the user will use if they want to use the stable version of Factory. Of course, they can use the more blending edge of Factory used for integration.</p>",
 
-  createiso: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Coordinator</li></ul><p>From time to time the Coordinator can decide if the quality of the installation part of Factory is good enought to make an ISO snapshop of the distribution. This image will be the recommended medium to install the distribution.</p>",
+  createiso: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Coordinator</li></ul><p>From time to time the Coordinator can decide if the quality of the installation part of Factory is good enought to make an ISO snapshot of the distribution.</p><p>This image will be the recommended medium to install the distribution.</p>",
 
   factoryiso: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul><p>Factory snapshot used to install the distribution.</p>",
 
