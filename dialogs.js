@@ -89,19 +89,26 @@ window.descriptions = {
 
   bugreport: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> QA Team</li></ul><p>The Integration Test task can detect errors in the distribution, and as a result of that QA Team needs to fill a bug report. This bug report needs to be precise and detailed to make easy the work for the developer.</p><p>Sometimes the bug reported needs to be tracked to avoid regressions. In this case the QA Teams needs also incorporate a new test case in the tool to detect them.</p>",
 
-  factorytested: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul><p>This is the final product for the users. This is the expected distribution that the iser</p>",
+  factorytested: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul><p>This is the final product for the users. This is the expected distribution that the user will use if they want to use the stable version of Factory. Of course, they can use the more blending edge of Factory used for integration.</p>",
 
-  createiso: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Coordinator</li></ul>",
-  factoryiso: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul>",
+  createiso: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Coordinator</li></ul><p>From time to time the Coordinator can decide if the quality of the installation part of Factory is good enought to make an ISO snapshop of the distribution. This image will be the recommended medium to install the distribution.</p>",
+
+  factoryiso: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul><p>Factory snapshot used to install the distribution.</p>",
 
   coordinator: "<ul><li><strong>Type:</strong> Role</li><li><strong>Current role:</strong> Release Manager</li></ul><p>The person for this role will be one individual selected from the <strong>Factory maintainer</strong> role.</p><p>Previously this role was more broad and with more tasks. But due to the automation in place the Coordinator will be just responsible for reviewing the ISO after all previous steps were completed.</p>",
 
   factorymaintainer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Current role:</strong> Factory maintainers</li></ul><p><ul><li>Does final review and merge to Factory integration project.</li><li>Has access to all devel projects in order to make sure needed changes are done.</li><li>Does keep in mind overall state of Factory state and merge according to it.</li></ul></p>",
+
   legalreviewer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Current role:</strong> Legal team</li></ul><p><ul><li>Checks whether we can legally distribute a package.</li><li>Reviews whether declared license is correct and looks for possible conflicting licenses.</li><li>Checks license changes among packages.</li></ul></p>",
+
   securityreviewer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Current role:</strong> Security team</li></ul><p><ul><li>Reviews packages for special privileges (suid, capabilities, dbus, ...), without their approval, nothing in Factory can be included with those.</li><li>Reports possible security issues.</li><li>Introduces new policies to harden the openSUSE.</li></ul></p>",
+
   technicalreviewer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Role:</strong>Technical Reviewer</li><li><strong>Current role:</strong> Technical Reviewer</li></ul><p>Reviews submissions to the Factory to make sure they follow packaging guidelines and doesn't contain obvious errors.</p><p>Newly technical reviewer also groups packages related to each other (think new KDE) that are going to get accepted all together.</p><p>He/she also decides, when the change might have a big enough impact to run it through staging project first (new autotools, boost, gcc, icu, ...) or when the change is big and might seriously broke things for people in runtime so it needs openQA run (think new Xorg, new systemd, ...)",
+
   qateam: "<ul><li><strong>Type:</strong> Role</li><li><strong>Role:</strong>QA Team</li><li><strong>Current role:</strong> none</li></ul><p>Team of people who watch over automatic tests and try to maintain them and adjust them whenever needed.</p>",
+
   projectmaintainer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Role:</strong>Project maintainer</li><li><strong>Current role:</strong> Project Maintainer</li></ul><p>Somebody who reviews SRs comming to the devel project and pushes them forward when needed. Almost always also package maintainer.</p><p>Project maintainer can be also maintainer of temporal staging project that gets created when some major change is on way to factory. Here he has to fix packages/ping package maintainer to fix packages and propagate them back to the devel project.</p>",
+
   packagemaintainer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Role:</strong>Package maintainer</li><li><strong>Current role:</strong> Package Maintainer</li></ul><p>Somebody who creates, fixes or changes individual package, probably will overlap with project maintainer in quite some cases.</p>"
 }
 
