@@ -57,11 +57,14 @@ window.descriptions = {
 
   createsrfactory: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Project Maintainer</li></ul><p>Create the SR (or group of SR) to be integrated into Factory.</p>",
 
-  autolegal: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Legal Reviewer (Bot)</li></ul><p>The boot osc-legal.py check if the package referenced in the SR had a compatible license or if this package was previously approved. If none of these conditions are meet, the bot can reject the SR and wait for a manual review later in the process.</p>",
+  autolegal: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Legal Reviewer (Bot)</li></ul><p>The bot osc-legal.py verifies whether the package referenced in the SR either has a compatible license or the package was previously approved. If neither is the case, the bot can reject the SR and wait for a manual review later in the process.</p>",
 
-  rpmlint: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Security Reviewer (Bot)</li></ul><p>Attached to the submit process, there is a bot that check the basic security conditions of the package, like SUID permissions.</p>",
+  rpmlint: "<ul><li><strong>Type:</strong> Condition</li> \
+	  <li><strong>Role:</strong> Security Reviewer (Bot)</li> \
+	  </ul><p>rpmlint runs as part of the package build. The review bot makes sure \
+	  that there are no overrides of rpmlint rules that bypass policy</p>",
 
-  checkrepo: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Technical Reviewer (Bot)</li></ul><p>There is a automatic technical review process for every new SR to Factory. This review look for potential problems before the integration, like expanding the Base:System, disabled repositories, new version of the packages or introducing cycles in the dependencies</p>",
+  checkrepo: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Technical Reviewer (Bot)</li></ul><p>There is an automatic technical review process for every new SR to Factory. This review checks for potential problems before the integration, like expanding the Base:System, disabled repositories, new version of the packages or introducing cycles in the dependencies</p>",
 
   needsstaging: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Technical Reviewer</li></ul><p>Some packages (or groups of packages) need more effort to be integrated into Factory. For example, a new update of GCC can demand some work to another packages that do not compile using the new compiler without modification.</p><p>For those packages is a good idea 'fork' Factory, integrating an initial version of the new package together with the all affected packages. Now the developers can work on the integration of all those components. This is the main reason of the staging project.</p><p>But someone needs to make a decision about the kind of projects that needs a staging project, because the creation of a staging project from scratch is expensive. To avoid the waste of resources, one possible solution is creating a pool of staging projects that can be assigned and prepared by the Technical Reviewer. In case of necessity the Factory Maintainer can create new staging projects.</p>",
 
@@ -77,7 +80,14 @@ window.descriptions = {
 
   legalreview: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Legal Reviewer</li></ul><p>During the legal review the package which didn't pass the automatic checks is inspected by legal reviewer. License is verified to match and the code is inspected if there are not in fact some infridgements. Also usage of patented processes and similar problems are verfied.</p><p>This review is automatically put in place for all new packages</p>",
 
-  rpmlint2: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Security Reviewer</li></ul><p>Attached to the submit process, there is a bot that check the basic security conditions of the package, like SUID permissions. If there is any problem, the Security Reviewer can help to the developer to review manually the package and provide advice to fix the potential security issue.</p>",
+  rpmlint2: "<ul><li><strong>Type:</strong> Condition</li> \
+	  <li><strong>Role:</strong> Security Reviewer</li> \
+	  </ul><p>rpmlint runs as part of the package build. The \
+          review bot makes sure \ that there are no overrides of \
+          rpmlint rules that bypass policy. If there is any problem, \
+          the Security Reviewer can help to the developer to review \
+          manually the package and provide advice to fix the policy \
+	  violation.</p>",
 
   technicalrev: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Technical Reviewer</li></ul><p>Technical review is formal verification that the submission is up-par with regards to all the formatting norms for changelog and spec files.</p><p>During the review the code is also verified not to contain any unforseen consequences.</p>",
 
@@ -101,7 +111,7 @@ window.descriptions = {
 
   legalreviewer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Current role:</strong> Legal team</li></ul><p><ul><li>Checks whether we can legally distribute a package.</li><li>Reviews whether declared license is correct and looks for possible conflicting licenses.</li><li>Checks license changes among packages.</li></ul></p>",
 
-  securityreviewer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Current role:</strong> Security team</li></ul><p><ul><li>Reviews packages for special privileges (suid, capabilities, dbus, ...), without their approval, nothing in Factory can be included with those.</li><li>Reports possible security issues.</li><li>Introduces new policies to harden the openSUSE.</li></ul></p>",
+  securityreviewer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Current role:</strong> Security team</li></ul><p><ul><li>Reviews packages for special privileges (suid, capabilities, dbus, ...). No package with that requires extra privileges can be included in Factory without security review.</li><li>Reports possible security issues.</li><li>Introduces new policies to harden the distribution.</li></ul></p>",
 
   technicalreviewer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Role:</strong>Technical Reviewer</li><li><strong>Current role:</strong> Technical Reviewer</li></ul><p>Reviews submissions to the Factory to make sure they follow packaging guidelines and doesn't contain obvious errors.</p><p>Newly technical reviewer also groups packages related to each other (think new KDE) that are going to get accepted all together.</p><p>He/she also decides, when the change might have a big enough impact to run it through staging project first (new autotools, boost, gcc, icu, ...) or when the change is big and might seriously broke things for people in runtime so it needs openQA run (think new Xorg, new systemd, ...)",
 
