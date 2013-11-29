@@ -99,7 +99,7 @@ window.descriptions = {
 
   bugreport: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> QA Team</li></ul><p>The Integration Test task can detect errors in the distribution, and as a result of that QA Team needs to fill a bug report. This bug report needs to be precise and detailed to make easy the work for the developer.</p><p>Sometimes the bug reported needs to be tracked to avoid regressions. In this case the QA Teams also needs to add a new test case in the tool to detect them.</p>",
 
-  factorytested: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul><p>The final product for the users. It is the expected version that they will use if they want to use Factory.</p><p>Of course if they wish, they can use the more bleeding edge version of Factory marked here as integration.</p>",
+  factorytested: "<ul><li><strong>Type:</strong> Action</li><li><strong>Role:</strong> Factory Maintainer</li></ul><p>This is the stable version of Factory. The final product for most users. Still, those wanting to try more recent package versions can install the bleeding edge version of Factory used for integration.</p>",
 
   createiso: "<ul><li><strong>Type:</strong> Condition</li><li><strong>Role:</strong> Coordinator</li></ul><p>From time to time the Coordinator can decide if the quality of the installation part of Factory is good enought to make an ISO snapshot of the distribution.</p><p>This image will be the recommended medium to install the distribution.</p>",
 
@@ -117,7 +117,7 @@ window.descriptions = {
 
   qateam: "<ul><li><strong>Type:</strong> Role</li><li><strong>Role:</strong>QA Team</li><li><strong>Current role:</strong> none</li></ul><p>Team of people who watch over automatic tests and try to maintain them and adjust them whenever needed.</p><p>This team is working on expanding openQA and its coverage.</p>",
 
-  projectmaintainer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Role:</strong>Project maintainer</li><li><strong>Current role:</strong> Project Maintainer</li></ul><p>Reviews submissions to the devel project and pushes them forward when needed. Almost always also package maintainer.</p><p>Project maintainer can be also maintainer of a temporal staging project that gets created when some major change is on its way to factory. Here he has to fix packages/ping package maintainer to fix packages and propagate them back to the devel project.</p>",
+  projectmaintainer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Role:</strong>Project maintainer</li><li><strong>Current role:</strong> Project Maintainer</li></ul><p>Reviews submissions to the devel project and pushes them forward if they're approved. Almost always also package maintainer.</p><p>Project maintainer can be also maintainer of a temporal staging project that gets created when some major change is on its way to factory. Here he has to fix packages/ping package maintainer to fix packages and propagate them back to the devel project.</p>",
 
   packagemaintainer: "<ul><li><strong>Type:</strong> Role</li><li><strong>Role:</strong>Package maintainer</li><li><strong>Current role:</strong> Package Maintainer</li></ul><p>Somebody who creates, fixes or changes individual packages, probably will overlap with project maintainer in quite some cases.</p>"
 }
