@@ -32,11 +32,20 @@ svg .action:hover {
 }
 
 svg .condition:hover {
-  opacity:
-  0.5;
+  opacity: 0.5;
 }
 
 /* jQuery UI */
 .ui-widget {
   font-size: 10pt;
+}
+
+#description {
+  display: none;
+}
+
+@media print {
+  #description {
+    display: block;
+  }
 }
